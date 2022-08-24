@@ -1,0 +1,95 @@
+var iFileName = "Healer - Homebrew Background [LeThinkTank's work, edited and transcribed by Lurking_Ninjas]"; // Edited and Transcribed by Lurking_Ninjas
+RequiredSheetVersion(12.999); 
+
+SourceList["LTT:dndbeyond"] = {
+	name : "LeThinkTank: Healer",
+	abbreviation : "NTS:DnDB",
+	group : "DnD Beyond",
+	url : "https://www.dndbeyond.com/backgrounds/4253-healer",
+	date : "24/08/2022"
+};
+
+BackgroundList["healer"] = {
+	regExpSearch : /healer|back alley doctor|combat medic|village healer|faith healer|private family doctor|healer's apprentice/i,
+	name : "Healer",
+	source : ["NTS:DnDB"],
+	skills : ["Medicine"],
+	skillstxt : "Medicine and choose one from Nature, Survival, and Religion",
+	gold : 10,
+	equipleft : [
+		["Ink and quill", "", ""]
+		["Small knife", "", ""]
+		["Herbalism kit", "", 3]
+		["Healer's kit", "", 1]
+		["Winter blanket", "", ""]
+		["Healer's badge and certificate", "", ""]
+	],
+	equipright : [
+		["Common clothes", "", 3],
+		["Belt pouch (with coins)", "", 1]
+	],
+	languageProfs : [1],
+	toolProfs : [["Herbalism kit", 1]],
+	feature : "Practiced Healer",
+	trait : [
+		"I save lives. What you do is probably not nearly as important.",
+		"Everything can be understood and explained. If I don't know, I will try to find out.",
+		"I am constantly pointing out the flaws in others and their arguments, as if diagnosing and illness.",
+		"I feel tremendous empathy for all who suffer.",
+		"I’m oblivious to etiquette and social expectations.",
+		"I am entranced and inspired by the brilliance and glory of the living body.",
+		"I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.",
+		"I have spent years writing and collecting my insights into the practice of medicine which I hope to publish. I love sharing my ideas."
+	],
+	ideal : [
+		["Greater Good",
+			"Greater Good. My craft is meant to be shared with all, not used for my own benefit. (Good)"
+		],
+		["Logic",
+			"Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking. (Lawful)"
+		],
+		["Free Thinking",
+			"Free Thinking. Inquiry and curiosity are the pillars of progress. (Chaotic)"
+		],
+		["Power",
+			"Power. Those who seek my craft will pay through the nose to get it, either through coin or favor. (Evil)"
+		],
+		["Pragmatism",
+			"Pragmatism. Why do what I do? I am good at it and I'm always professional. That is the best anyone can do. (Neutral)"
+		],
+		["Meaningful",
+			"Meaningful. It may not always be glamorous, but what I do is valuable. (Any)"
+		]
+	],
+	bond : [
+		"I long to visit the place where I first learned to practice medicine.",
+		"My mentor up and disappeared. I have to find them, maybe out of honest or concern or because they owe me something.",
+		"I took up the profession because someone close to me died of something treatable.",
+		"I was pushed, or encouraged, into the field by my parents, who are expecting great things from me.",
+		"I know how similar we are to animals, and now I can't stand to eat meat anymore.",
+		"I see service to others as the greatest honor and calling anyone can have."
+	],
+	flaw : [
+		"I am perpetually disappointed in the abilities of other people.",
+		"I made a terrible mistake that cost many lives - and I would do anything to keep that mistake a secret.",
+		"I am far too good at my job and now some powerful organization I do not like wants to recruit me, with progressively greater pressure.",
+		"I will stop at nothing to find the cure that evades me.",
+		"Most people run at the site of something hideous while I stop to take notes about it.",
+		"When a patient dies, I am overcome with grief and become angry or dismissive with those around me."
+	],
+	extra : [
+		"Select a Medical Tradition",
+		"back alley doctor",
+		"combat medic",
+		"village healer",
+		"faith healer",
+		"private family doctor",
+		"healer's apprentice",
+	],
+};
+
+var BackgroundFeatureList["practiced healer"] = {
+	description : "Thanks to the time I've spent practicing my craft on the sick and injured, I'm familiar with all kinds of maladies and afflictions which might burden my patients. I gain an additional 1d4 uses from a healer's kit and When making a diagnostic medicine check I do so with advantage. I'm also very familiar with a wide variety of roots, herbs, and mosses that aid in recovery and health.",
+	source : [NTT:DnDB]
+	}
+};
