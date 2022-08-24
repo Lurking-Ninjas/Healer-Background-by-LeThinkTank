@@ -29,7 +29,7 @@ BackgroundList["healer"] = {
 		["Belt pouch (with coins)", "", 1]
 	],
 	languageProfs : [1],
-	toolProfs : [["Herbalism kit", 1]],
+	toolProfs : ["Herbalism kit", 1],
 	feature : "Practiced Healer",
 	trait : [
 		"I save lives. What you do is probably not nearly as important.",
@@ -91,5 +91,5 @@ BackgroundList["healer"] = {
 
 BackgroundFeatureList["practiced healer"] = {
 	description : "Thanks to the time I've spent practicing my craft on the sick and injured, I'm familiar with all kinds of maladies and afflictions which might burden my patients. I gain an additional 1d4 uses from a healer's kit and When making a diagnostic medicine check I do so with advantage. I'm also very familiar with a wide variety of roots, herbs, and mosses that aid in recovery and health.",
-  source : [NTTDnDB]
+  source : ["NTT:DnDB"]
 };
