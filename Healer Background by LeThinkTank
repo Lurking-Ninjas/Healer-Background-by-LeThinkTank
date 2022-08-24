@@ -86,6 +86,7 @@ BackgroundList["healer"] = {
 		"private family doctor",
 		"healer's apprentice",
 	],
+	variant: [],
 };
 
 var BackgroundFeatureList["practiced healer"] = {
