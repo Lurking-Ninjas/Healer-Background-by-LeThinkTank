@@ -89,8 +89,7 @@ BackgroundList["healer"] = {
 	variant: [],
 };
 
-var BackgroundFeatureList["practiced healer"] = {
+BackgroundFeatureList["practiced healer"] = {
 	description : "Thanks to the time I've spent practicing my craft on the sick and injured, I'm familiar with all kinds of maladies and afflictions which might burden my patients. I gain an additional 1d4 uses from a healer's kit and When making a diagnostic medicine check I do so with advantage. I'm also very familiar with a wide variety of roots, herbs, and mosses that aid in recovery and health.",
-	source : [NTT:DnDB]
-	}
+  source : [NTTDnDB]
 };
