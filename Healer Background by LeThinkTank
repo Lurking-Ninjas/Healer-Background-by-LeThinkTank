@@ -1,9 +1,9 @@
-var iFileName = "Healer - Homebrew Background [LeThinkTank's work, edited and transcribed by Lurking_Ninjas]"; // Edited and Transcribed by Lurking_Ninjas
-RequiredSheetVersion(12.999); 
+var iFileName = "Healer - Homebrew Background [LeThinkTank's work, edited and transcribed by Lurking_Ninjas].js"; // Edited and Transcribed by Lurking_Ninjas
+RequiredSheetVersion(13.1.1); 
 
-SourceList["LTT:dndbeyond"] = {
+SourceList["LTT:DnDB"] = {
 	name : "LeThinkTank: Healer",
-	abbreviation : "NTS:DnDB",
+	abbreviation : "LTT:DnDB",
 	group : "DnD Beyond",
 	url : "https://www.dndbeyond.com/backgrounds/4253-healer",
 	date : "24/08/2022"
@@ -12,11 +12,11 @@ SourceList["LTT:dndbeyond"] = {
 BackgroundList["healer"] = {
 	regExpSearch : /healer|back alley doctor|combat medic|village healer|faith healer|private family doctor|healer's apprentice/i,
 	name : "Healer",
-	source : ["NTS:DnDB"],
+	source : ["LTT:DnDB"],
 	skills : ["Medicine"],
 	skillstxt : "Medicine and choose one from Nature, Survival, and Religion",
 	gold : 10,
-	equipleft : [
+	equipleft : [,
 		["Ink and quill", "", ""]
 		["Small knife", "", ""]
 		["Herbalism kit", "", 3]
@@ -24,7 +24,7 @@ BackgroundList["healer"] = {
 		["Winter blanket", "", ""]
 		["Healer's badge and certificate", "", ""]
 	],
-	equipright : [
+	equipright : [,
 		["Common clothes", "", 3],
 		["Belt pouch (with coins)", "", 1]
 	],
@@ -91,5 +91,5 @@ BackgroundList["healer"] = {
 
 BackgroundFeatureList["practiced healer"] = {
 	description : "Thanks to the time I've spent practicing my craft on the sick and injured, I'm familiar with all kinds of maladies and afflictions which might burden my patients. I gain an additional 1d4 uses from a healer's kit and When making a diagnostic medicine check I do so with advantage. I'm also very familiar with a wide variety of roots, herbs, and mosses that aid in recovery and health.",
-  source : ["NTT:DnDB"]
+  source : ["LTT:DnDB"]
 };
