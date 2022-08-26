@@ -6,7 +6,7 @@ SourceList["LTT:DnDB"] = {
 	abbreviation : "LTT:DnDB",
 	group : "DnD Beyond",
 	url : "https://www.dndbeyond.com/backgrounds/4253-healer",
-	date : "24/08/2022",
+	date : "01/26/2018",
 };
 
 BackgroundList["healer"] = {
